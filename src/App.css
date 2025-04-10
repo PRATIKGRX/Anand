@@ -1,0 +1,36 @@
+@import "tailwindcss";
+.nav-item::before,
+.nav-item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 0px solid transparent;
+}
+
+.nav-item::after {
+  width: 0%;
+  height: 80%;
+  border-top: 3px solid #7D0A0A;
+  border-bottom: 3px solid #7D0A0A;
+  border-radius: 15%;
+  transition: all 0.3s ease;
+}
+
+.nav-item::before {
+  width: 120%;
+  height: 0%;
+  border-left: 3px solid #7D0A0A;
+  border-right: 3px solid #7D0A0A;
+  border-radius: 15%;
+  transition: all 0.6s ease;
+}
+
+.nav-item:hover::before {
+  height: 80%;
+}
+
+.nav-item:hover::after {
+  width: 120%;
+}
+
+
