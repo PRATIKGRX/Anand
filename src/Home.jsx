@@ -54,10 +54,10 @@ const Home = () => {
   return (
     <>
       <main>
-        <section className="z-0 relative py-10 px-10 mt-[8vh] bg-[url('https://images.pexels.com/photos/2183113/pexels-photo-2183113.jpeg?cs=srgb&dl=architecture-building-business-2183113.jpg&fm=jpg')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-gradient-to-r from-red-200/70 to-red-500"></div>
-          <div className="relative z-10 text-white">
-            <p className="text-center text-2xl font-bold">
+        <section className="z-0 relative py-10 px-10 mt-[10vh] bg-[#F5F5F5]">
+          <div className="absolute inset-0 "></div>
+          <div className="relative z-10">
+            <p className="text-center text-2xl font-bold text-black">
               "Comprehensive Steel Solutions: <br /> From Structural Integrity
               to Precision Tools, We Have Every Material You Need to Build with
               Strength." <br /> -Anand
@@ -67,26 +67,27 @@ const Home = () => {
                 <img
                   src="https://th.bing.com/th/id/OIP.76QO-ytHRfNjynV8_KkPVgHaJQ?w=1080&h=1350&rs=1&pid=ImgDetMain"
                   alt=""
+                  className="h-[600px] w-full object-cover object-center"
                 />
               </div>
               <div className="flex flex-col justify-between py-10">
                 <div className="flex flex-col gap-4">
-                  <p className="text-2xl font-semibold flex items-center">
+                  <p className="text-2xl font-medium flex items-center">
                     <HiMiniMinusSmall />
                     About Us
                     <HiMiniMinusSmall />
                   </p>
                   <div className="relative mb-4 flex">
-                    <span className="text-6xl uppercase relative">Anand</span>
+                    <span className="text-6xl font-bold relative">ANAND</span>
                     <div className="group cursor-pointer absolute top-0 left-0 h-full w-55">
-                      <span className="text-6xl uppercase text-[#7D0A0A] absolute top-0 left-0 overflow-hidden w-0 group-hover:w-full transition-all duration-600">
-                        Anand
+                      <span className="text-6xl font-bold text-[#ff3030] absolute top-0 left-0 overflow-hidden w-0 group-hover:w-full transition-all duration-600">
+                        ANAND
                       </span>
                     </div>
                   </div>
 
-                  <p className="text-xl leading-10">
-                    Established in 1981, we are a leading steel and metallic
+                  <p className="text-xl leading-10 text-[#555555]">
+                    Established in <span className="text-[#353535] font-bold">1981</span>, we are a leading steel and metallic
                     products supplier in Nepal, serving both wholesale and
                     retail customers. With over four decades of experience,
                     we've supported over 1,200 customers and numerous
@@ -98,17 +99,17 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="mt-4">
-                  <button className="relative px-2 py-1 rounded-sm border-1 border-[#7D0A0A] text-[#7D0A0A] text-lg overflow-hidden transition-colors duration-500 hover:text-white group font-bold">
+                  <button className="relative px-2 py-1 border-[1.5px] border-[#7D0A0A] text-[#7D0A0A] text-lg overflow-hidden transition-colors duration-500 hover:text-white group font-bold">
                     Learn More
-                    <span className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"></span>
-                    <span className="absolute top-1/2 left-1/2 w-30 h-30 -translate-x-1/2 -translate-y-1/2 bg-[#7D0A0A] rounded-full scale-0 opacity-0 -z-10 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 ease-out"></span>
+                    <span className="absolute inset-0 transition-opacity duration-600 group-hover:opacity-0"></span>
+                    <span className="absolute top-1/2 left-1/2 w-30 h-30 -translate-x-1/2 -translate-y-1/2 bg-[#7D0A0A] rounded-full scale-0 opacity-0 -z-10 group-hover:scale-100 group-hover:opacity-100 transition-all duration-600 ease-out"></span>
                   </button>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section className="px-10 py-10">
+        <section className="px-10 py-10 bg-[#F5F5F5]">
           <div>
             <h4 className="text-4xl font-bold text-center">
               Our Product Range
@@ -120,7 +121,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="px-10 py-10">
+        <section className="px-10 py-10 bg-[#F5F5F5]">
           <div>
             <h5 className="text-center text-4xl font-bold">Why Choose Us?</h5>
 
@@ -164,7 +165,7 @@ const Home = () => {
           </div>
         </section>
       </main>
-      <footer className="px-10 py-10">
+      <footer className="px-10 py-10 bg-[#ffd1ac]">
         <div className="px-10 py-10">
           <div className="grid grid-cols-4 gap-4">
             <div>logo Anand</div>

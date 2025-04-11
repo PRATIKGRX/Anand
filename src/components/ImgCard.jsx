@@ -1,16 +1,20 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa6";
-const ImgCard = ({pic,picName}) => {
+
+const ImgCard = ({ pic, picName, description }) => {
   return (
-    <div class="relative group flex overflow-hidden rounded-lg">
-      <img
-        src={pic}
-        className="w-full h-full object-cover object-center"
-      />
-      <div class="absolute inset-0 bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#CC7B7B]/20 backdrop-blur-sm">
-        <p className="text-black text-lg font-semibold">{picName}</p>
-        <button className="flex items-center gap-1 bg-stone-700 text-white px-2 py-1 border-1 border-black">Request <FaArrowRight /></button>
-      </div>
+    <div className=" w-[400px] h-[300px] relative group flex justify-center overflow-hidden rounded-lg">
+      <img src={pic} className="object-cover object-center" />
+      <div className="absolute inset-0 bg-opacity-50 flex flex-col items-center justify-center gap-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/40 backdrop-blur-sm desc">
+        <p className="text-[#000000] uppercase text-xl font-bold">{picName}</p>
+        <p className="whitespace-nowrap overflow-hidden w-fit relative ">
+          <span className="inline-block desc-hover:animate-typing text-lg text-[#3a3a3a] font-semibold ">
+            {description}
+          </span>
+        </p>
+        <button className="border-[1.5px] px-2 py-1 font-bold">Request</button>
+
+        </div>
+      
     </div>
   );
 };
