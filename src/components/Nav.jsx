@@ -26,6 +26,11 @@ const Nav = () => {
             <li
               
             >
+              <Link className="relative flex justify-center items-center h-full  px-2 py-1 transition-all duration-600 ease-[cubic-bezier(0.075,0.82,0.165,1)] nav-item" to="/products">PRODUCTS</Link>
+            </li>
+            <li
+              
+            >
               <Link className="relative flex justify-center items-center h-full  px-2 py-1 transition-all duration-600 ease-[cubic-bezier(0.075,0.82,0.165,1)] nav-item" to="/projects">PROJECTS</Link>
             </li>
             <li

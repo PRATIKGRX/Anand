@@ -1,5 +1,13 @@
 import React from "react";
 import Swipe from "./components/Swiper";
+import { RiPriceTagLine } from "react-icons/ri";
+import { RiStarLine } from "react-icons/ri";
+import { RiTruckLine } from "react-icons/ri";
+import { RiShieldCheckLine } from "react-icons/ri";
+import { RiThumbUpLine } from "react-icons/ri";
+import { RiMedalLine } from "react-icons/ri";
+import { RiRefreshLine } from "react-icons/ri";
+import { RiGroupLine } from "react-icons/ri";
 const About = () => {
   return (
     <>
@@ -52,9 +60,10 @@ const About = () => {
                 <h4 className="text-xl font-bold text-center">Our Mission</h4>
                 <p className="text-lg font-semibold text-center italic">We aim to provide our clients with:</p>
                 <div>
-                  <div className="text-lg font-semibold text-[#555555] text-center">Competitive pricing</div>
-                  <div className="text-center text-lg font-semibold text-[#555555]">High-quality products</div>
-                  <div className="text-center text-lg font-semibold text-[#555555]">Timely and reliable delivery</div>
+                  <div className="text-lg font-semibold text-[#555555] text-center"><p><RiPriceTagLine /></p><p>Competitive pricing</p></div>
+                  <div className="text-center text-lg font-semibold text-[#555555]"><p><RiStarLine /></p>
+                    <p>High-quality products</p></div>
+                  <div className="text-center text-lg font-semibold text-[#555555]"><p><RiTruckLine /></p><p>Timely and reliable delivery</p></div>
                 </div>
                 <p className="text-lg font-semibold text-center italic">Your satisfaction is our priority.</p>
               </div>
@@ -69,11 +78,12 @@ const About = () => {
             <div className="flex flex-col gap-4 px-8 py-8">
               <p className="text-xl font-bold text-center">Our Core Values</p>
               <ul className="text-center text-lg font-semibold text-[#555555]">
-                <li>Integrity and Trust</li>
-                <li>Customer Satisfaction</li>
-                <li>Commitment to Quality</li>
-                <li>Continuous Improvement</li>
-                <li>Teamwork and Collaboration</li>
+                <li><p><RiShieldCheckLine />
+                </p><p>Integrity and Trust</p></li>
+                <li><p><RiThumbUpLine /></p><p>Customer Satisfaction</p></li>
+                <li><p><RiMedalLine /></p><p>Commitment to Quality</p></li>
+                <li><p><RiRefreshLine /></p><p>Continuous Improvement</p></li>
+                <li><p><RiGroupLine /></p><p>Teamwork and Collaboration</p></li>
               </ul>
             </div>
               </div>
@@ -90,12 +100,12 @@ const About = () => {
             </div>
           </section>
         </main>
-        <footer>
-            <div>
-                <div>
-                    <h5>Ready to start your next project? </h5>
-                    <div>
-                        contact us or give somethings to go on
+        <footer className="px-10 py-10">
+            <div className="flex items-center justify-center">
+                <div className="flex flex-col gap-6">
+                    <h5 className="text-3xl font-semibold">Ready to start your next project? </h5>
+                    <div className="flex justify-center">
+                        <button className="px-2 py-1 border">Contact US</button>
                         
                     </div>
                 </div>

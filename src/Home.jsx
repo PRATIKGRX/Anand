@@ -1,7 +1,7 @@
 import React from "react";
 import ImgCard from "./components/ImgCard";
 import { useState } from "react";
-import CenteredTabs from "./components/TEST";
+import CenteredTabs from "./components/Centerdtabs";
 import { HiMiniMinusSmall } from "react-icons/hi2";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import { FaAngleDoubleLeft } from "react-icons/fa";
@@ -168,7 +168,16 @@ const Home = () => {
       <footer className="px-10 py-10 bg-[#ffd1ac]">
         <div className="px-10 py-10">
           <div className="grid grid-cols-4 gap-4">
-            <div>logo Anand</div>
+            <div className="flex flex-col justify-between"><p>logo Anand</p>
+            <div className="flex gap-4">
+            <button className="flex items-center justify-center w-8 h-8 text-red-400 bg-transparent rounded-full transition-all duration-300 hover:bg-red-400 hover:text-white hover:border-red-400 hover:shadow-[0_0_15px_rgba(239,68,68,0.8),0_0_30px_rgba(239,68,68,0.6),0_0_45px_rgba(239,68,68,0.5)]">
+                <SiGmail />
+              </button>
+              <button className="flex items-center justify-center w-8 h-8 text-green-400 bg-transparent rounded-full transition-all duration-300 hover:bg-green-400 hover:text-white hover:border-green-400 hover:shadow-[0_0_15px_rgba(34,197,94,0.8),0_0_30px_rgba(34,197,94,0.6),0_0_45px_rgba(34,197,94,0.5)]">
+              <BsWhatsapp />
+              </button>
+            </div>
+            </div>
             <div className="text-sm">
               <p>
                 +9779851360366 <br />
@@ -181,14 +190,10 @@ const Home = () => {
             </div>
             <div>
               <div className="flex gap-2 items-center">
-              <button className="flex items-center justify-center w-8 h-8 text-red-400 bg-transparent rounded-full transition-all duration-300 hover:bg-red-400 hover:text-white hover:border-red-400 hover:shadow-[0_0_15px_rgba(239,68,68,0.8),0_0_30px_rgba(239,68,68,0.6),0_0_45px_rgba(239,68,68,0.5)]">
-                <SiGmail />
-              </button><p className="text-sm">anandtradeconcern@gmail.com <br />anandtradektm@gmail.com</p>
+              <p className="text-sm">anandtradeconcern@gmail.com <br />anandtradektm@gmail.com</p>
               </div>
               <div className="flex gap-2 items-center">
-              <button className="flex items-center justify-center w-8 h-8 text-green-400 bg-transparent rounded-full transition-all duration-300 hover:bg-green-400 hover:text-white hover:border-green-400 hover:shadow-[0_0_15px_rgba(34,197,94,0.8),0_0_30px_rgba(34,197,94,0.6),0_0_45px_rgba(34,197,94,0.5)]">
-              <BsWhatsapp />
-              </button><p className="text-sm">+9779851360366</p>
+              <p className="text-sm">+9779851360366</p>
               </div>
             </div>
             <div className="flex flex-col gap-3">
