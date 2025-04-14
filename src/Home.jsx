@@ -7,6 +7,7 @@ import { FaAngleDoubleRight } from "react-icons/fa";
 import { FaAngleDoubleLeft } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { BsWhatsapp } from "react-icons/bs";
+
 const Home = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -54,13 +55,13 @@ const Home = () => {
   return (
     <>
       <main>
-        <section className="z-0 relative py-10 px-10 mt-[10vh] bg-[#F5F5F5]">
+        <section className="z-0 relative py-10 px-10 mt-[10vh] bg-[#E9E3E6]">
           <div className="absolute inset-0 "></div>
           <div className="relative z-10">
             <p className="text-center text-2xl font-bold text-black">
-              "Comprehensive Steel Solutions: <br /> From Structural Integrity
+              <i>"Comprehensive Steel Solutions: <br /> From Structural Integrity
               to Precision Tools, We Have Every Material You Need to Build with
-              Strength." <br /> -Anand
+              Strength."</i> <br /> -Anand
             </p>
             <div className="grid grid-cols-2 py-15 gap-15">
               <div>
@@ -80,7 +81,7 @@ const Home = () => {
                   <div className="relative mb-4 flex">
                     <span className="text-6xl font-bold relative">ANAND</span>
                     <div className="group cursor-pointer absolute top-0 left-0 h-full w-55">
-                      <span className="text-6xl font-bold text-[#ff3030] absolute top-0 left-0 overflow-hidden w-0 group-hover:w-full transition-all duration-600">
+                      <span className="text-6xl font-bold text-[#CC2936] absolute top-0 left-0 overflow-hidden w-0 group-hover:w-full transition-all duration-600">
                         ANAND
                       </span>
                     </div>
@@ -99,10 +100,10 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="mt-4">
-                  <button className="relative px-2 py-1 border-[1.5px] border-[#7D0A0A] text-[#7D0A0A] text-lg overflow-hidden transition-colors duration-500 hover:text-white group font-bold">
+                  <button className="relative px-2 py-1 border-[1.5px] border-none shadow-xl/20 shadow-[#242424] text-[#080808] text-lg overflow-hidden transition-colors duration-500 hover:text-white group font-bold">
                     Learn More
                     <span className="absolute inset-0 transition-opacity duration-600 group-hover:opacity-0"></span>
-                    <span className="absolute top-1/2 left-1/2 w-30 h-30 -translate-x-1/2 -translate-y-1/2 bg-[#7D0A0A] rounded-full scale-0 opacity-0 -z-10 group-hover:scale-100 group-hover:opacity-100 transition-all duration-600 ease-out"></span>
+                    <span className="absolute top-1/2 left-1/2 w-30 h-30 -translate-x-1/2 -translate-y-1/2 bg-[#CC2936] shadow-xl shadow-[#ff0000] rounded-full scale-0 opacity-0 -z-10 group-hover:scale-100 group-hover:opacity-100  transition-all duration-600 ease-out"></span>
                   </button>
                 </div>
               </div>
@@ -165,11 +166,11 @@ const Home = () => {
           </div>
         </section>
       </main>
-      <footer className="px-10 py-10 bg-[#ffd1ac]">
+      <footer className="px-10 py-10 bg-[#746565] text-[#EEEEEE]">
         <div className="px-10 py-10">
           <div className="grid grid-cols-4 gap-4">
             <div className="flex flex-col justify-between"><p>logo Anand</p>
-            <div className="flex gap-4">
+            <div className="flex gap-1">
             <button className="flex items-center justify-center w-8 h-8 text-red-400 bg-transparent rounded-full transition-all duration-300 hover:bg-red-400 hover:text-white hover:border-red-400 hover:shadow-[0_0_15px_rgba(239,68,68,0.8),0_0_30px_rgba(239,68,68,0.6),0_0_45px_rgba(239,68,68,0.5)]">
                 <SiGmail />
               </button>
@@ -204,7 +205,7 @@ const Home = () => {
               <div className="flex gap-2">
                 <input
                   type="email"
-                  className="border-1 border-black focus:outline-none px-4 py-4"
+                  className="border-1 border-[#EEEEEE] focus:outline-none px-4 py-4"
                   placeholder="Email..."
                 />
                 <button>Submit</button>

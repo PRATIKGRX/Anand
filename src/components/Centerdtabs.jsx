@@ -149,27 +149,27 @@ export default function CenteredTabs() {
         <Tab label="Tools & Supplementary" />
       </Tabs>
       <Box sx={{ p: 2 }}>
-        {value === 0 && <div className="grid grid-cols-3 gap-4 justify-center ">
+        {value === 0 && <div className="grid grid-cols-4 gap-4 justify-center ">
                     {SteelProducts.map((element) => (
                       <ImgCard key={element.text} pic={element.src} picName={element.text} description={element.description}/>
                     ))}
                   </div>}
-        {value === 1 && <div className="grid grid-cols-3 gap-4 justify-center ">
+        {value === 1 && <div className="grid grid-cols-4 gap-4 justify-center ">
                     {Sheets.map((element) => (
                       <ImgCard key={element.text} pic={element.src} picName={element.text} description={element.description}/>
                     ))}
                   </div>}
-        {value === 2 && <div className="grid grid-cols-3 gap-4 justify-center  ">
+        {value === 2 && <div className="grid grid-cols-4 gap-4 justify-center  ">
                     {Cement.map((element) => (
                       <ImgCard key={element.text} pic={element.src} picName={element.text} description={element.description} />
                     ))}
                   </div>}
-        {value === 3 && <div className="grid grid-cols-3 gap-4 justify-center ">
+        {value === 3 && <div className="grid grid-cols-4 gap-4 justify-center ">
                     {Paint.map((element) => (
                       <ImgCard key={element.text} pic={element.src} picName={element.text}  description={element.description}/>
                     ))}
                   </div>}
-        {value === 4 &&  <div className="grid grid-cols-3 gap-4 justify-center ">
+        {value === 4 &&  <div className="grid grid-cols-4 gap-4 justify-center ">
                     {Tools.map((element) => (
                       <ImgCard key={element.text} pic={element.src} picName={element.text} description={element.description} />
                     ))}
