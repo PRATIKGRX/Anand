@@ -8,10 +8,12 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Products from "./Products";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop"; 
 function App() {
   return (
     <Router>
       <Nav />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
