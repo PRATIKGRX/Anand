@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
+    padding: 50px 0;
   }
   
   .swiper-slide img {
@@ -24,7 +24,7 @@
     object-fit: cover;
   }
   .swiper-button-next, .swiper-button-prev {
-    background-color:rgb(255, 62, 62); /* Custom background color for buttons */
+    background-color:rgb(172, 172, 172); /* Custom background color for buttons */
     color: white; /* Button text color */ /* Round the button edges */ /* Width of the button */
     height: 100%; /* Height of the button */
     display: flex;
@@ -45,7 +45,7 @@
   
   /* Button hover effect */
   .swiper-button-next:hover, .swiper-button-prev:hover {
-    background-color: #0056b3; /* Darker color on hover */
+    background-color: #4e4e4e; /* Darker color on hover */
     cursor: pointer;
   }
   

@@ -5,8 +5,7 @@ import CenteredTabs from "./components/Centerdtabs";
 import { HiMiniMinusSmall } from "react-icons/hi2";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import { FaAngleDoubleLeft } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
-import { BsWhatsapp } from "react-icons/bs";
+import MyDisclosure from "./components/Discolsure";
 
 const Home = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -15,43 +14,7 @@ const Home = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const items = [
-    {
-      title: "Over 40 Years of Expertise",
-      description:
-        "With decades of experience, we bring unmatched knowledge and precision to every project. Our long-standing presence in the industry reflects our commitment to excellence.",
-    },
-    {
-      title: "Trusted in Nepal's Construction Industry",
-      description:
-        "Recognized as a reliable partner, Anand has earned the trust of builders, contractors, and homeowners across Nepal through consistent quality and service.",
-    },
-    {
-      title: "Quality Materials Guaranteed",
-      description:
-        "We source only premium materials, ensuring durability and strength in every construction, so your projects stand the test of time.",
-    },
-    {
-      title: "Commitment to Customer Satisfaction",
-      description:
-        "Your satisfaction is our priority. We work closely with clients to understand their needs and deliver solutions that exceed expectations.",
-    },
-    {
-      title: "Innovative Solutions for Modern Construction",
-      description:
-        "Staying ahead with modern technology and design trends, we provide innovative solutions that blend functionality with aesthetics.",
-    },
-    {
-      title: "Environmentally Responsible Practices",
-      description:
-        "We are committed to sustainable building practices, minimizing environmental impact while maintaining top-tier quality.",
-    },
-    {
-      title: "Competitive Pricing",
-      description:
-        "We offer fair and competitive pricing without compromising on quality, giving you the best value for your investment.",
-    },
-  ];
+  
   return (
     <>
       <main>
@@ -126,35 +89,8 @@ const Home = () => {
           <div>
             <h5 className="text-center text-4xl font-bold">Why Choose Us?</h5>
 
-            <div className="grid grid-cols-2 py-10">
-              <div className=" flex items-center">
-                <ul className="py-10 flex flex-col gap-4">
-                  {items.map((item, index) => (
-                    <li key={index}>
-                      <div className="">
-                        <button
-                          onClick={() => toggleText(index)}
-                          className=" flex gap-2 items-center transition text-left w-full font-semibold text-2xl"
-                        >
-                          <FaAngleDoubleRight />
-                          {item.title}
-                          <FaAngleDoubleLeft />
-                        </button>
-
-                        <div
-                          className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                            openIndex === index ? "max-h-40" : "max-h-0"
-                          }`}
-                        >
-                          <p className="px-5 text-xl py-2 text-left text-black">
-                            {item.description}
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <div className="grid grid-cols-2 gap-10 py-10">
+            <MyDisclosure/>
               <div>
                 <img
                   src="https://img.freepik.com/premium-photo/wholesale-steel-rebar-round-iron-steel-rod-construction-steel-bars-view-rebar-steel-demra-dhaka-bangladesh_94678-707.jpg"
@@ -166,54 +102,7 @@ const Home = () => {
           </div>
         </section>
       </main>
-      <footer className="px-10 py-10 bg-[#746565] text-[#EEEEEE]">
-        <div className="px-10 py-10">
-          <div className="grid grid-cols-4 gap-4">
-            <div className="flex flex-col justify-between"><p>logo Anand</p>
-            <div className="flex gap-1">
-            <button className="flex items-center justify-center w-8 h-8 text-red-400 bg-transparent rounded-full transition-all duration-300 hover:bg-red-400 hover:text-white hover:border-red-400 hover:shadow-[0_0_15px_rgba(239,68,68,0.8),0_0_30px_rgba(239,68,68,0.6),0_0_45px_rgba(239,68,68,0.5)]">
-                <SiGmail />
-              </button>
-              <button className="flex items-center justify-center w-8 h-8 text-green-400 bg-transparent rounded-full transition-all duration-300 hover:bg-green-400 hover:text-white hover:border-green-400 hover:shadow-[0_0_15px_rgba(34,197,94,0.8),0_0_30px_rgba(34,197,94,0.6),0_0_45px_rgba(34,197,94,0.5)]">
-              <BsWhatsapp />
-              </button>
-            </div>
-            </div>
-            <div className="text-sm">
-              <p>
-                +9779851360366 <br />
-                01-5326501/5343576 <br />01-5151814/5151815
-              </p>
-              <p>
-                Head Office: 131-Milan Marg, Teku, Kathmandu <br /> Branch
-                Office Road, Beside Mahalaxmi Petrol Pump
-              </p>
-            </div>
-            <div>
-              <div className="flex gap-2 items-center">
-              <p className="text-sm">anandtradeconcern@gmail.com <br />anandtradektm@gmail.com</p>
-              </div>
-              <div className="flex gap-2 items-center">
-              <p className="text-sm">+9779851360366</p>
-              </div>
-            </div>
-            <div className="flex flex-col gap-3">
-              <p className="text-sm">
-                Stay informed with our latest news, industry insights, and
-                updates.
-              </p>
-              <div className="flex gap-2">
-                <input
-                  type="email"
-                  className="border-1 border-[#EEEEEE] focus:outline-none px-4 py-4"
-                  placeholder="Email..."
-                />
-                <button>Submit</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      
     </>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Blog = () => {
   return (
-    <div>
+    <div className='mt-[10vh]'>
         <main>
             <div>
                 <div>
@@ -11,13 +11,7 @@ const Blog = () => {
                 </div>
             </div>
             <section>
-                <div>
-                    <input type="text" /> <p>search</p>
-                    <p>Filter / Tabs (Optional but recommended):
 
-[ All ] [ Steel ] [ Cement ] [ Paints ] [ Tools ]
-(Optional: Add Search Bar)</p>
-                </div>
             </section>
         </main>
       

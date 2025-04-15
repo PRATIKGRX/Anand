@@ -60,10 +60,10 @@ const About = () => {
                 <h4 className="text-xl font-bold text-center">Our Mission</h4>
                 <p className="text-lg font-semibold text-center italic">We aim to provide our clients with:</p>
                 <div>
-                  <div className="text-lg font-semibold text-[#555555] text-center"><p><RiPriceTagLine /></p><p>Competitive pricing</p></div>
-                  <div className="text-center text-lg font-semibold text-[#555555]"><p><RiStarLine /></p>
+                  <div className="text-lg font-semibold text-[#555555] flex gap-2 items-center justify-center"><p><RiPriceTagLine /></p><p>Competitive pricing</p></div>
+                  <div className="text-lg font-semibold text-[#555555] flex gap-2 items-center justify-center"><p><RiStarLine /></p>
                     <p>High-quality products</p></div>
-                  <div className="text-center text-lg font-semibold text-[#555555]"><p><RiTruckLine /></p><p>Timely and reliable delivery</p></div>
+                  <div className="text-lg font-semibold text-[#555555] flex gap-2 items-center justify-center"><p><RiTruckLine /></p><p>Timely and reliable delivery</p></div>
                 </div>
                 <p className="text-lg font-semibold text-center italic">Your satisfaction is our priority.</p>
               </div>
@@ -77,8 +77,8 @@ const About = () => {
             </div>
             <div className="flex flex-col gap-4 px-8 py-8">
               <p className="text-xl font-bold text-center">Our Core Values</p>
-              <ul className="text-center text-lg font-semibold text-[#555555]">
-                <li><p><RiShieldCheckLine />
+              <ul className="text-lg font-semibold text-[#555555] flex gap-2 items-center justify-center">
+                <li className="flex flex-col justify-between"><p><RiShieldCheckLine />
                 </p><p>Integrity and Trust</p></li>
                 <li><p><RiThumbUpLine /></p><p>Customer Satisfaction</p></li>
                 <li><p><RiMedalLine /></p><p>Commitment to Quality</p></li>
@@ -105,7 +105,11 @@ const About = () => {
                 <div className="flex flex-col gap-6">
                     <h5 className="text-3xl font-semibold">Ready to start your next project? </h5>
                     <div className="flex justify-center">
-                        <button className="px-2 py-1 border">Contact US</button>
+                    <button className="relative px-2 py-1 border-[1.5px] border-none shadow-xl/20 shadow-[#242424] text-[#080808] text-lg overflow-hidden transition-colors duration-500 hover:text-white group font-bold">
+                    CONTACT US
+                    <span className="absolute inset-0 transition-opacity duration-600 group-hover:opacity-0"></span>
+                    <span className="absolute top-1/2 left-1/2 w-35 h-30 -translate-x-1/2 -translate-y-1/2 bg-[#CC2936] shadow-xl shadow-[#ff0000] rounded-full scale-0 opacity-0 -z-10 group-hover:scale-100 group-hover:opacity-100  transition-all duration-600 ease-out"></span>
+                  </button>
                         
                     </div>
                 </div>
