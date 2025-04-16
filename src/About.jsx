@@ -56,6 +56,9 @@ const About = () => {
                   without compromising on quality.
                 </p>
               </div>
+              <div>
+                img
+              </div>
               <div className="px-8 py-8 flex flex-col gap-4">
                 <h4 className="text-xl font-bold text-center">Our Mission</h4>
                 <p className="text-lg font-semibold text-center italic">We aim to provide our clients with:</p>
@@ -75,18 +78,19 @@ const About = () => {
                 approach.
               </p>
             </div>
+            
+              </div>
+            </div>
             <div className="flex flex-col gap-4 px-8 py-8">
               <p className="text-xl font-bold text-center">Our Core Values</p>
-              <ul className="text-lg font-semibold text-[#555555] flex gap-2 items-center justify-center">
-                <li className="flex flex-col justify-between"><p><RiShieldCheckLine />
+              <ul className="text-lg font-semibold text-[#555555] flex gap-4 items-center justify-center">
+                <li className="flex flex-col justify-between border border-[#505050] rounded-lg shadow-2xl px-4 py-3 hover:scale-110 hover:bg-[#505050] hover:text-white duration-500"><p className=" "><RiShieldCheckLine />
                 </p><p>Integrity and Trust</p></li>
-                <li><p><RiThumbUpLine /></p><p>Customer Satisfaction</p></li>
-                <li><p><RiMedalLine /></p><p>Commitment to Quality</p></li>
-                <li><p><RiRefreshLine /></p><p>Continuous Improvement</p></li>
-                <li><p><RiGroupLine /></p><p>Teamwork and Collaboration</p></li>
+                <li className="flex flex-col justify-between border border-[#505050] rounded-lg shadow-2xl px-4 py-3 hover:scale-110 hover:bg-[#505050] hover:text-white duration-500"><p><RiThumbUpLine /></p><p>Customer Satisfaction</p></li>
+                <li className="flex flex-col justify-between border border-[#505050] rounded-lg shadow-2xl px-4 py-3 hover:scale-110 hover:bg-[#505050] hover:text-white duration-500"><p><RiMedalLine /></p><p>Commitment to Quality</p></li>
+                <li className="flex flex-col justify-between border border-[#505050] rounded-lg shadow-2xl px-4 py-3 hover:scale-110 hover:bg-[#505050] hover:text-white duration-500"><p><RiRefreshLine /></p><p>Continuous Improvement</p></li>
+                <li className="flex flex-col justify-between border border-[#505050] rounded-lg shadow-2xl px-4 py-3 hover:scale-110 hover:bg-[#505050] hover:text-white duration-500"><p><RiGroupLine /></p><p>Teamwork and Collaboration</p></li>
               </ul>
-            </div>
-              </div>
             </div>
           </section>
           <section className="py-10">
