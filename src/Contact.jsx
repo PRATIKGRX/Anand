@@ -47,16 +47,16 @@ const Contact = () => {
               <div className="flex gap-4 justify-between text-xl font-semibold">
               <div className="flex gap-4 items-center w-full ">
                 <label htmlFor="name"><p>Name</p></label>
-                <input type="text" className=" w-full px-3 py-2 border-r-2 border-l-2 rounded-xl focus:outline-none" name="" id="name" placeholder="*Name" />
+                <input type="text" className=" w-full px-3 py-2 border-r-3 border-l-3 rounded-[4%] border-red-900 focus:outline-none caret-blue-400" name="" id="name" placeholder="*Name" />
               </div>
               <div className="flex gap-3 items-center w-full">
               <label htmlFor="email"><p>Email:</p></label>
-              <input type="text" className=" w-full px-3 py-2 border-r-2 border-l-2 focus:outline-none rounded-xl" id="email" placeholder="Your email" />
+              <input type="text" className="w-full px-3 py-2 border-r-3 border-l-3 rounded-[4%] border-red-900 focus:outline-none caret-blue-400" id="email" placeholder="Your email" />
               </div>
               </div>
               
               <div className="flex flex-col gap-5">
-              <textarea name="" id="" rows={15} className="px-3 py-2 text-xl font-semibold w-full border-r-2 border-l-2 rounded-xl focus:outline-none" placeholder="Message">
+              <textarea name="" id="" rows={15} className="w-full px-4 py-4 border-r-3 border-l-3 rounded-[4%] border-red-900 caret-blue-400 focus:outline-none" placeholder="Message">
               </textarea>
               <button className="px-2 py-1 border-2 rounded-lg text-lg font-bold">Send message</button>
               </div>

@@ -1,12 +1,16 @@
 import React from 'react'
 import { SiGmail } from "react-icons/si";
 import { BsWhatsapp } from "react-icons/bs";
+import Biglogo from "../assets/anandLogoBig.png";
 const Footer = () => {
   return (
     <footer className="px-10 py-10 bg-[#746565] text-[#EEEEEE]">
-        <div className="px-10 py-10">
-          <div className="grid grid-cols-4 gap-4">
-            <div className="flex flex-col justify-between"><p>logo Anand</p>
+        <div className="px-10 py-0">
+          <div className="grid grid-cols-4 gap-4 items-center">
+            <div className="flex flex-col gap-8">
+              <div className='h-[40%]'>
+              <img src={Biglogo} alt="" className='h-[100px]' />
+              </div>
             <div className="flex gap-1">
             <button className="flex items-center justify-center w-8 h-8 text-red-400 bg-transparent rounded-full transition-all duration-300 hover:bg-red-400 hover:text-white hover:border-red-400 hover:shadow-[0_0_15px_rgba(239,68,68,0.8),0_0_30px_rgba(239,68,68,0.6),0_0_45px_rgba(239,68,68,0.5)]">
                 <SiGmail />
@@ -16,7 +20,7 @@ const Footer = () => {
               </button>
             </div>
             </div>
-            <div className="text-sm">
+            <div className="text-sm flex flex-col gap-4">
               <p>
                 +9779851360366 <br />
                 01-5326501/5343576 <br />01-5151814/5151815
@@ -26,11 +30,11 @@ const Footer = () => {
                 Office Road, Beside Mahalaxmi Petrol Pump
               </p>
             </div>
-            <div>
-              <div className="flex gap-2 items-center">
+            <div className='flex flex-col gap-4'>
+              <div className="">
               <p className="text-sm">anandtradeconcern@gmail.com <br />anandtradektm@gmail.com</p>
               </div>
-              <div className="flex gap-2 items-center">
+              <div className="">
               <p className="text-sm">+9779851360366</p>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, History } from "swiper/modules";
+import {  Autoplay, Navigation, Pagination, History } from "swiper/modules";
 import { FaChevronLeft } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa";
 import "swiper/css";
@@ -19,7 +19,11 @@ export default function Swipe() {
         }}
         pagination={true}
         history={{ key: "slide" }}
-        modules={[Navigation, Pagination, History]}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay,Navigation, Pagination, History]}
         className="h-full w-full m-10"
       >
         <SwiperSlide data-history="1" className="h-full w-full m-5">
@@ -222,7 +226,7 @@ export default function Swipe() {
           </div>
         </SwiperSlide>
       </Swiper>
-      <button className="custom-next absolute top-0 left-[-15px] h-full z-50 text-[#c9c9c9] bg-[#6e6e6e]/80 p-2 hover:text-[#444] hover:bg-[#8f8f8f] transition-all duration-400 ">
+      <button className="custom-prev absolute top-0 left-[-15px] h-full z-50 text-[#c9c9c9] bg-[#6e6e6e]/80 p-2 hover:text-[#444] hover:bg-[#8f8f8f] transition-all duration-400 ">
       <FaChevronLeft />
       </button>
       <button className="custom-next absolute top-0 right-[-15px] h-full z-50 text-[#c9c9c9] bg-[#6e6e6e]/80 p-2 hover:text-[#444] hover:bg-[#8f8f8f] transition-all duration-400 ">

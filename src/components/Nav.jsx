@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/ananadlogo.png";
 const Nav = () => {
   return (
     <nav className="px-10 fixed top-0 right-0 left-0 z-99 bg-[#CC2936] text-[#F5F0F6] shadow-2xl ">
       <div className="flex justify-between items-center h-[10vh]">
-        <div className="text-[15px]">
-          <p>Anand</p>
+        <div className="h-[50%]">
+          <img src={logo} alt="" className="h-full" />
         </div>
         <div className="font-bold">
           <ul className="flex h-10 gap-8 text-md">
