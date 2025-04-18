@@ -69,7 +69,7 @@ const Home = () => {
                   <button className="relative px-2 py-1 border-[1.5px] border-[#8E1616]  text-[#080808] text-lg overflow-hidden transition-colors duration-500 hover:text-white group font-bold">
                     Learn More
                     <span className="absolute inset-0 transition-opacity duration-600 group-hover:opacity-0"></span>
-                    <span className="absolute top-1/2 left-1/2 w-34 h-10 -translate-x-1/2 -translate-y-1/2 bg-[#CC2936] shadow-xl shadow-[#ff0000] rounded-full scale-0 opacity-0 -z-10 group-hover:scale-100 group-hover:opacity-100  transition-all duration-600 ease-out"></span>
+                    <span className="absolute top-1/2 left-1/2 w-34 h-40 -translate-x-1/2 -translate-y-1/2 bg-[#CC2936] shadow-xl shadow-[#ff0000] rounded-full scale-0 opacity-0 -z-10 group-hover:scale-100 group-hover:opacity-100  transition-all duration-500 ease-out"></span>
                   </button>
                 </div>
               </div>

@@ -48,7 +48,7 @@ const Nav = () => {
             <button className="relative px-2 font-bold py-1 border-[1.5px] border-[#A31D1D] overflow-hidden transition-colors duration-600 hover:text-white group">
               Request
               <span className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"></span>
-              <span className="absolute top-1/2 left-1/2 w-22 h-15 -translate-x-1/2 -translate-y-1/2 bg-[#A31D1D] rounded-full scale-0 opacity-0 -z-10 group-hover:scale-100 group-hover:opacity-100 transition-all duration-600 ease-out"></span>
+              <span className="absolute top-1/2 left-1/2 w-22 h-28 -translate-x-1/2 -translate-y-1/2 bg-[#A31D1D] rounded-full scale-0 opacity-0 -z-10 group-hover:scale-100 group-hover:opacity-100 transition-all duration-600 ease-out"></span>
             </button>
           </div>
         </div>
