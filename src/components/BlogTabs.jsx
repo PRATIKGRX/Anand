@@ -2,7 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import BlogContext from "./blogContext";
+import BlogContext from "./BlogContent";
 const BlogTabs = () => {
   const [value, setValue] = React.useState(0);
 
