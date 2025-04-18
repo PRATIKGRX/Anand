@@ -58,7 +58,9 @@ const Contact = () => {
               <div className="flex flex-col gap-5">
               <textarea name="" id="" rows={15} className="w-full px-4 py-4 border-r-3 border-l-3 rounded-[4%] border-red-900 caret-blue-400 focus:outline-none" placeholder="Message">
               </textarea>
-              <button className="px-2 py-1 border-2 rounded-lg text-lg font-bold">Send message</button>
+              <button className=" px-2 py-1 border-[1.5px] border-[#CC2936] text-[#080808] text-lg hover:bg-[#CC2936] transition-colors duration-500 hover:text-white font-bold">
+                    CONTACT US
+                  </button>
               </div>
             </form>
           </div>

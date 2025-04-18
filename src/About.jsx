@@ -18,8 +18,8 @@ const About = () => {
               <div>
                 <h4 className="text-center text-4xl font-bold">About US</h4>
               </div>
-              <div className="grid grid-cols-2 py-10">
-                <div>img</div>
+              <div className="grid grid-cols-2 gap-8 py-10">
+                <div><img src="https://th.bing.com/th/id/OIP.LLP9i6kGFOhwuxHQ5OZUiAHaHr?rs=1&pid=ImgDetMain" className="w-full" alt="" /></div>
                 <div className="flex flex-col gap-4">
                   <h4 className="text-2xl font-bold italic">
                     Pioneering the Steel and Construction Materials Industry
@@ -33,9 +33,7 @@ const About = () => {
                     delivering quality materials at the most competitive prices
                     across Nepal.
                   </p>
-                </div>
-              </div>
-              <div className="py-10 flex flex-col gap-4">
+                  <div className="py-10 flex flex-col gap-4">
                 <h4 className="text-2xl text-center font-bold">Over 40 Years of Expertise</h4>
                 <p className="text-lg leading-10 text-[#555555] text-center">
                   With over four decades of experience, we have successfully
@@ -45,8 +43,10 @@ const About = () => {
                   us to ensure timely deliveries, even to the most remote areas.
                 </p>
               </div>
-              <div className="grid grid-cols-2">
-                <div className="px-8 py-8 flex flex-col gap-4">
+                </div>
+                
+              </div>
+              <div className="px-8 py-8 flex flex-col gap-4">
                 <h4 className="text-xl font-bold text-center">Our Commitment to You</h4>
                 <p className="text-lg font-semibold text-center leading-6 text-[#555555]">
                   Our dedicated team of professionals carefully analyses your
@@ -56,9 +56,10 @@ const About = () => {
                   without compromising on quality.
                 </p>
               </div>
-              <div>
-                img
-              </div>
+              
+              <div className="grid grid-cols-2">
+               
+          
               <div className="px-8 py-8 flex flex-col gap-4">
                 <h4 className="text-xl font-bold text-center">Our Mission</h4>
                 <p className="text-lg font-semibold text-center italic">We aim to provide our clients with:</p>
@@ -69,8 +70,7 @@ const About = () => {
                   <div className="text-lg font-semibold text-[#555555] flex gap-2 items-center justify-center"><p><RiTruckLine /></p><p>Timely and reliable delivery</p></div>
                 </div>
                 <p className="text-lg font-semibold text-center italic">Your satisfaction is our priority.</p>
-              </div>
-              <div className="px-8 py-8">
+                <div className="px-8 py-8">
               <h4 className="text-xl font-bold text-center">Our Vision</h4>
               <p className="text-lg font-semibold text-center italic">
                 To become Nepal's leading supplier of construction materials,
@@ -78,6 +78,11 @@ const About = () => {
                 approach.
               </p>
             </div>
+              </div>
+              <div>
+                <img src="https://img.freepik.com/premium-photo/industrial-complex_328191-12776.jpg" alt="" className="h-[500px] object-cover object-center w-full" />
+              </div>
+              
             
               </div>
             </div>

@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import ImgCard from './ImgCard';
-import { red } from '@mui/material/colors';
+
 export default function CenteredTabs() {
     const SteelProducts = [
         {
@@ -123,7 +123,7 @@ export default function CenteredTabs() {
         };
 
   return (
-    <Box sx={{ width: '100%', bgcolor: '#F5F5F5' }}>
+    <Box sx={{ width: '100%', bgcolor: '' }}>
       <Tabs value={value} onChange={handleChange} centered sx={{
           // Change the underline indicator color 
           '& .MuiTabs-indicator': {
