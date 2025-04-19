@@ -12,38 +12,38 @@ const Nav = () => {
           <ul className="flex h-10 gap-4 text-md ">
             <li
             >
-              <Link className="relative flex justify-center items-center h-full  px-2 py-1 transition-all duration-600 ease-[cubic-bezier(0.075,0.82,0.165,1)] nav-item" to="/">HOME</Link>
+              <Link className="relative flex justify-center items-center h-full  px-1 py-1 transition-all duration-600 ease-[cubic-bezier(0.075,0.82,0.165,1)] nav-item" to="/">HOME</Link>
             </li>
             <li
               
             >
-              <Link className="relative flex justify-center items-center h-full  px-2 py-1 transition-all duration-600 ease-[cubic-bezier(0.075,0.82,0.165,1)] nav-item" to="/about">ABOUT</Link>
+              <Link className="relative flex justify-center items-center h-full  px-1 py-1 transition-all duration-600 ease-[cubic-bezier(0.075,0.82,0.165,1)] nav-item" to="/about">ABOUT</Link>
             </li>
             <li
               
             >
-              <Link className="relative flex justify-center items-center h-full  px-2 py-1 transition-all duration-600 ease-[cubic-bezier(0.075,0.82,0.165,1)] nav-item" to="/blog">BLOG</Link>
+              <Link className="relative flex justify-center items-center h-full  px-1 py-1 transition-all duration-600 ease-[cubic-bezier(0.075,0.82,0.165,1)] nav-item" to="/blog">BLOG</Link>
             </li>
             <li
               
             >
-              <Link className="relative flex justify-center items-center h-full  px-2 py-1 transition-all duration-600 ease-[cubic-bezier(0.075,0.82,0.165,1)] nav-item" to="/products">PRODUCTS</Link>
+              <Link className="relative flex justify-center items-center h-full  px-1 py-1 transition-all duration-600 ease-[cubic-bezier(0.075,0.82,0.165,1)] nav-item" to="/products">PRODUCTS</Link>
             </li>
             <li
               
             >
-              <Link className="relative flex justify-center items-center h-full  px-2 py-1 transition-all duration-600 ease-[cubic-bezier(0.075,0.82,0.165,1)] nav-item" to="/projects">PROJECTS</Link>
+              <Link className="relative flex justify-center items-center h-full  px-1 py-1 transition-all duration-600 ease-[cubic-bezier(0.075,0.82,0.165,1)] nav-item" to="/projects">PROJECTS</Link>
             </li>
             <li
               
             >
-              <Link className="relative flex justify-center items-center h-full  px-2 py-1 transition-all duration-600 ease-[cubic-bezier(0.075,0.82,0.165,1)] nav-item" to="/contact">CONTACT</Link>
+              <Link className="relative flex justify-center items-center h-full  px-1 py-1 transition-all duration-600 ease-[cubic-bezier(0.075,0.82,0.165,1)] nav-item" to="/contact">CONTACT</Link>
             </li>
           </ul>
         </div>
 
         <div className="flex gap-5 text-md ">
-          <button className="font-medium">Sign In</button>
+          <button className="relative text-lg font-medium text-[#BA3E3E] hover:text-[#A31D1D] after:content-[''] after:absolute after:left-1/2 after:bottom-[4px] after:w-0 after:h-[2px] after:bg-[#A31D1D] after:transition-all after:duration-500 hover:after:left-0 hover:after:w-full">Sign In</button>
           <div className="">
             <button className="relative px-2 font-bold py-1 border-[1.5px] border-[#A31D1D] overflow-hidden transition-colors duration-600 hover:text-white group">
               Request
