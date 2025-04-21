@@ -39,7 +39,7 @@ useEffect(() => {
                   placeholder="Search..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className=" border bg-gray-400 rounded-lg px-10 py-2 w-[600px] text-xl focus:outline-none"
+                  className=" border  rounded-lg px-10 py-2 w-[600px] text-xl focus:outline-none"
                 />
                 <p className="absolute  top-1/2 left-[20px] transform -translate-x-1/2 -translate-y-1/2 ">
                   <RiSearch2Line   />

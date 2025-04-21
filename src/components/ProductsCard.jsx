@@ -27,7 +27,7 @@ const ProductCard = ({ pic, picName, description, additiondescription }) => {
 
   return (
     <div className="relative w-full">
-      <div className="w-full h-[300px] relative group flex justify-center overflow-hidden rounded-lg">
+      <div onClick={toggleModal} className="w-full h-[300px] relative group flex justify-center overflow-hidden rounded-lg">
         <img src={pic} className="object-cover object-center w-full h-full" />
         <div className="absolute inset-0 bg-opacity-50 flex flex-col items-center justify-center gap-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/40 backdrop-blur-sm desc">
           <p className="text-[#000000] uppercase text-xl font-bold">
@@ -41,14 +41,13 @@ const ProductCard = ({ pic, picName, description, additiondescription }) => {
               {description}
             </span>
           </p>
-          <div className="mt-4 group/button">
+          <div className="mt-4 ">
             <button
               onClick={toggleModal}
-              className="relative px-2 py-1 border-[1.5px] border-[#CC2936] shadow-xl/20 shadow-[#242424] text-[#080808] text-lg overflow-hidden transition-colors duration-500 hover:text-white group/button font-bold"
+              className="px-2 py-1 border text-lg"
             >
               Learn More
-              <span className="absolute inset-0 transition-opacity duration-600 group-hover/button:opacity-0"></span>
-              <span className="absolute top-1/2 left-1/2 w-30 h-30 -translate-x-1/2 -translate-y-1/2 bg-[#CC2936] shadow-xl shadow-[#ff0000] rounded-full scale-0 opacity-0 -z-10 group-hover/button:scale-100 group-hover/button:opacity-100 transition-all duration-600 ease-out"></span>
+             
             </button>
           </div>
         </div>
@@ -57,7 +56,7 @@ const ProductCard = ({ pic, picName, description, additiondescription }) => {
       {/* Modal Overlay */}
       {isModalOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-[#B7B7B7]/20 bg-opacity-60 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-[#B7B7B7]/90 bg-opacity-60 backdrop-blur-sm"
           onClick={toggleModal}
         >
           {/* Modal Content */}
@@ -121,14 +120,13 @@ const ProductCard = ({ pic, picName, description, additiondescription }) => {
                   )}
                 </div>
 
-                <div className="mt-4 w-18 flex group/button">
+                <div className="mt-4 w-18 flex ">
                   <button
                     onClick={toggleModal}
-                    className="relative px-2 py-1 border-[1.5px] border-[#CC2936] shadow-xl/20 shadow-[#242424] text-[#080808] text-lg overflow-hidden transition-colors duration-500 hover:text-white group/button font-bold"
+                    className="text-lg px-2 py-1 border"
                   >
                     Close
-                    <span className="absolute inset-0 transition-opacity duration-600 group-hover/button:opacity-0"></span>
-                    <span className="absolute top-1/2 left-1/2 w-18 h-30 -translate-x-1/2 -translate-y-1/2 bg-[#CC2936] shadow-xl shadow-[#ff0000] rounded-full scale-0 opacity-0 -z-10 group-hover/button:scale-100 group-hover/button:opacity-100 transition-all duration-600 ease-out flex"></span>
+                    
                   </button>
                 </div>
               </div>
